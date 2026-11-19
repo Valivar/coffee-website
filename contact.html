@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | ChitChat Coffee</title>
+<meta name="description" content="Get in touch with the ChitChat coffee team, or enquire about becoming a distributor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body data-page="contact">
+<main class="page">
+  <div class="container shop-hero" style="grid-template-columns:1fr"><div><h1>Let's talk coffee</h1><p>Questions, wholesale enquiries or just saying hello: we usually reply within one working day.</p></div></div>
+  <div class="container contact-grid">
+    <div class="info-cards">
+      <div class="info"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.500 7-12a7 7 0 0 0-14 0c0 5.500 7 12 7 12z"/><circle cx="12" cy="10" r="2.500"/></svg><div><h3>Visit the estate</h3><p>123 Estate Road, Coffee Town,<br>Karnataka 000000</p></div></div>
+      <div class="info"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><div><h3>Call us</h3><p>+91 00000 00000<br>Mon–Sat, 9am – 6pm</p></div></div>
+      <div class="info"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><h3>Email</h3><p>hello@example.com</p></div></div>
+      <div class="map" aria-hidden="true"><span class="pin-dot"></span></div>
+    </div>
+
+    <div class="panel" id="distributor">
+      <div class="seg" role="tablist"><button class="on" data-mode="general">General enquiry</button><button data-mode="distributor">Become a distributor</button></div>
+      <form id="cf" novalidate>
+        <div class="fgrid">
+          <div class="field"><label for="n">Your name</label><input id="n" type="text" autocomplete="name"><p class="err">Please enter your name.</p></div>
+          <div class="field"><label for="e">Email</label><input id="e" type="email" autocomplete="email"><p class="err">Enter a valid email address.</p></div>
+          <div class="field"><label for="p">Phone</label><input id="p" type="tel" inputmode="numeric" maxlength="13" autocomplete="tel"><p class="err">Enter a valid 10-digit mobile number.</p></div>
+          <div class="field" id="topicBox"><label for="t">Topic</label><select id="t"><option>Order help</option><option>Product question</option><option>Wholesale / bulk orders</option><option>Feedback</option><option>Something else</option></select></div>
+          <div class="field is-hidden dist"><label for="c">City</label><input id="c" type="text"><p class="err">Tell us your city.</p></div>
+          <div class="field is-hidden dist"><label for="b">Business type</label><select id="b"><option>Retail store</option><option>Café / restaurant</option><option>Online seller</option><option>Hotel / office supplies</option><option>Other</option></select></div>
+          <div class="field is-hidden dist full"><label for="v">Expected monthly volume</label><select id="v"><option>Under 25 kg</option><option>25 – 100 kg</option><option>100 – 500 kg</option><option>500 kg +</option></select></div>
+          <div class="field full"><label for="m">Message</label><textarea id="m" rows="5" maxlength="1000"></textarea><p class="err">Please write at least 10 characters.</p></div>
+        </div>
+        <button class="btn btn-dark magnetic" type="submit" style="margin-top:18px"><span id="sendLbl">Send message</span></button>
+      </form>
+      <div class="sent is-hidden" id="sent"><svg class="check" viewBox="0 0 110 110" style="width:90px;height:90px"><circle cx="55" cy="55" r="48"/><path d="M33 57l15 15 30-33"/></svg><h3>Message sent!</h3><p class="muted" id="sentMsg"></p><button class="btn btn-ghost" id="again"><span>Send another</span></button></div>
+    </div>
+  </div>
+
+  <section class="container faq" style="max-width:900px;padding-top:0">
+    <h2 class="section-title dark" style="font-size:clamp(28px,3.6vw,44px)">Quick answers</h2>
+    <div class="faq-list">
+      <details open><summary><span>01</span>How long does delivery take?<small>Shipping</small></summary><div class="ans"><p>Standard delivery takes 3–5 business days, express 1–2 days. Orders over ₹599 ship free.</p></div></details>
+      <details><summary><span>02</span>Can I return opened coffee?<small>Returns</small></summary><div class="ans"><p>Unopened packs can be returned within 7 days. If something arrives damaged we'll replace it free of charge.</p></div></details>
+      <details><summary><span>03</span>Do you offer wholesale pricing?<small>Wholesale</small></summary><div class="ans"><p>Yes. Choose "Become a distributor" above and tell us a little about your business.</p></div></details>
+    </div>
+  </section>
+</main>
+<script src="products.js"></script>
+<script src="app.js"></script>
+<script src="forms.js"></script>
+</body>
+</html>
